@@ -1,4 +1,4 @@
-alert="Yes you made it BOSS" ;
+alert='Yes you made it BOSS' ;
 function number () {
     var x = document.getElementById("num");
 var i=0 ;
