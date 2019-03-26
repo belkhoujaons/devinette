@@ -8,11 +8,10 @@ if (random==x)
  else if (random<x)
  {(result="you're close! just a little lower") && (i++) ; }
   else if(random>x)
- {(result="you're close ! just a little higher") && (i++) ; 
+ {(result="you're close ! just a little higher") && (i++) ;} }
  while (i!=8) ;
 
  
  
 
-}
 }
