@@ -10,8 +10,14 @@
         <h2>Can you maybe...<br> Guess the number ? </h2>
         <img src="jaime-pas-les-devinettes.png" target="_blank">
         <h3>(From 1 to 100)</h3>
-        <input type="text" name="number" id="num" placeholder="The number is ...">
-        <input type="button" value="OK" onclick="number();" id="btn">
+        <form name="form">
+        <input type="text" name="input" value="" placeholder="The number is ...">
+        <input type="button" value="OK" onclick="number()" id="btn">
+    </form>
+        <p id="1">you're close ! just a little higher</p>
+        <p id="2" >you're close just a little lower </p>
+        <p id="3">YES! you made it BOSS </p>
+        <p id="4">OH no ... you lost (sorry..)</p>
          
         
         <h1>Wanna play again ? </h1> <input type="button" value="Yes !"> <input type="button" value="nope.">

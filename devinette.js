@@ -1,18 +1,28 @@
-alert='Yes you made it BOSS' ;
-function number () {
-    var x = document.getElementById("num");
-var i=0 ;
-var result ;
-var random = Math.random() * 101;
-if (random==x) 
-{ (alert="Yes you made it BOSS") && (i=8)   ;}
- else if (random<x)
- {(alert="you're close ! just a little lower") && (i++) ; }
-  else if(random>x)
- {(alert="you're close ! just a little higher") && (i++) ;} }
+function number (){
+var nombre =document.form.input.value;
+var tentative = 0;
+var solution = Math.floor(Math.random() * 100) + 1;
+while((nombre !== solution) && (tentative < 8)){
+  if (nombre > solution)
+    {
+      document.getElementById("1").style.display = "block";
+      document.getElementById("3").style.display = "block";
+      document.getElementById("4").style.display = "block";
+    }
+  else (nombre < solution)
+  {document.getElementById("2").style.display = "block";
+      document.getElementById("3").style.display = "block";
+      document.getElementById("4").style.display = "block";}
+  tentative++;
+  
+}
  
-
- 
- 
-
-
+if(nombre == solution)
+{document.getElementById("1").style.display = "block";
+      document.getElementById("2").style.display = "block";
+      document.getElementById("4").style.display = "block";}
+else
+{document.getElementById("1").style.display = "block";
+document.getElementById("2").style.display = "block";
+document.getElementById("3").style.display = "block";}
+}
